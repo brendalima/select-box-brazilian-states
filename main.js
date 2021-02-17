@@ -4,6 +4,7 @@ import Map from 'ol/Map';
 import View from 'ol/View';
 import {DragBox, Select} from 'ol/interaction';
 import {OSM, Vector as VectorSource} from 'ol/source';
+import {fromLonLat} from 'ol/proj';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import {platformModifierKeyOnly} from 'ol/events/condition';
 
@@ -22,8 +23,8 @@ var map = new Map({
     }) ],
   target: 'map',
   view: new View({
-    center: [0, 0],
-    zoom: 2,
+    center: fromLonLat([-50, -10]),
+    zoom: 3.5,
     constrainRotation: 16,
   }),
 });

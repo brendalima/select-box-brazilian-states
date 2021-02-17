@@ -93878,6 +93878,8 @@ var _interaction = require("ol/interaction");
 
 var _source = require("ol/source");
 
+var _proj = require("ol/proj");
+
 var _layer = require("ol/layer");
 
 var _condition = require("ol/events/condition");
@@ -93896,8 +93898,8 @@ var map = new _Map.default({
   })],
   target: 'map',
   view: new _View.default({
-    center: [0, 0],
-    zoom: 2,
+    center: (0, _proj.fromLonLat)([-50, -10]),
+    zoom: 3.5,
     constrainRotation: 16
   })
 }); // a normal select interaction to handle click
@@ -93959,7 +93961,7 @@ selectedFeatures.on(['add', 'remove'], function () {
     infoBox.innerHTML = 'No countries selected';
   }
 });
-},{"ol/ol.css":"node_modules/ol/ol.css","ol/format/GeoJSON":"node_modules/ol/format/GeoJSON.js","ol/Map":"node_modules/ol/Map.js","ol/View":"node_modules/ol/View.js","ol/interaction":"node_modules/ol/interaction.js","ol/source":"node_modules/ol/source.js","ol/layer":"node_modules/ol/layer.js","ol/events/condition":"node_modules/ol/events/condition.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"ol/ol.css":"node_modules/ol/ol.css","ol/format/GeoJSON":"node_modules/ol/format/GeoJSON.js","ol/Map":"node_modules/ol/Map.js","ol/View":"node_modules/ol/View.js","ol/interaction":"node_modules/ol/interaction.js","ol/source":"node_modules/ol/source.js","ol/proj":"node_modules/ol/proj.js","ol/layer":"node_modules/ol/layer.js","ol/events/condition":"node_modules/ol/events/condition.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

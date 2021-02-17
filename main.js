@@ -8,7 +8,7 @@ import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import {platformModifierKeyOnly} from 'ol/events/condition';
 
 var vectorSource = new VectorSource({
-  url: 'data/geojson/countries.geojson',
+  url: 'https://www.rocklabdigital.com/static/geojson/estado.geojson',
   format: new GeoJSON(),
 });
 

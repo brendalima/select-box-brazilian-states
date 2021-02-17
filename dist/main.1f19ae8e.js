@@ -93885,7 +93885,7 @@ var _condition = require("ol/events/condition");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var vectorSource = new _source.Vector({
-  url: 'data/geojson/countries.geojson',
+  url: 'https://www.rocklabdigital.com/static/geojson/estado.geojson',
   format: new _GeoJSON.default()
 });
 var map = new _Map.default({

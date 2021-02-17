@@ -1,0 +1,31 @@
+{
+  "name": "box-selection-brazilian-states",
+  "version": "1.0.0",
+  "description": "box selection for maps using openlayers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build --public-url . index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendalima/select-box-brazilian-states.git"
+  },
+  "keywords": [
+    "select",
+    "box"
+  ],
+  "author": "brendalima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendalima/select-box-brazilian-states/issues"
+  },
+  "homepage": "https://github.com/brendalima/select-box-brazilian-states#readme",
+  "dependencies": {
+    "ol": "^6.5.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
